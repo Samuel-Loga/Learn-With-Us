@@ -1,0 +1,46 @@
+.tab {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff; 
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    padding-top: 1.5em;
+  } 
+
+  .regTabInput {
+    padding: 4px;
+
+  }
+
+  .regTabSelect {
+    width: 50%;
+    padding: 5px;
+  }
+
+  .btn-sec, .btn-tertiary {
+    width: 50%;
+  }
+
+  .btn-block, .btn-block:hover, .btn-block:focus {
+    width: 80%;
+    background-color: #bbb8b8;
+    border: none;
+    font-size: 18px;
+    color: #0e0d0d;
+    text-shadow: none;
+  }

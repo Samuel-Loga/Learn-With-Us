@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some</title>
+    <!-- Online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Offline -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <div class="container px-4 py-1">
+            <a href="#" class="navbar-brand fw-bold">
+                <img src="img/education-svgrepo-com.svg" alt="" class="rounded-circle me-2" width="40px" height="40px">
+                Learn With Us
+            </a>
+
+            <!-- Toggler Menu Icon -->
+            <div class="hamburger-ico navbar-toggler" 
+                onclick="myFunction(this)"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+            >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#msce" class="nav-link">MSCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tertiary" class="nav-link">Tertiary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-us" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#research" class="nav-link">Research Areas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="bg-dark carousel-item active">
+                <div class="d-sm-flex carousel-caption text-sm-start mb-5">
+                    <div class="row showcase">
+                        <div class="col-md-8 col-sm-12 showcase-text">
+                            <h1>Welcome <span class="text-warning">Animated text</span></h1>
+                            <p class="my-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio vitae necessitatibus voluptates dolore expedita?
+                            </p>
+                            <button class="btn btn-lg btn-secondary fw-bold border-white bg-white" data-bs-toggle="modal" data-bs-target="#enrolModal">
+                                Start enrollment
+                            </button>
+                        </div>
+                        
+                        <figure class="col-md-4 showcase-img">
+                            <div>
+                              <img src="img/cv.svg" alt="" style="" class="img-fluid d-none d-sm-block">
+                            </div>
+                        </figure>
+
+                        <hr class="mt-5">
+                    </div>
+                </div>
+              </div>
+              <div class="bg-success carousel-item">
+                <div class="d-sm-flex carousel-caption text-sm-start mb-5">
+                    <div class="row showcase">
+                        <div class="col-md-8 col-sm-12 showcase-text">
+                            <h1>Welcome <span class="text-warning">Animated text</span></h1>
+                            <p class="my-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio vitae necessitatibus voluptates dolore expedita?
+                            </p>
+                            <button class="btn btn-lg btn-secondary fw-bold border-white bg-white" data-bs-toggle="modal" data-bs-target="#enrolModal">
+                                Start enrollment
+                            </button>
+                        </div>
+                        
+                        <figure class="col-md-4 showcase-img">
+                            <div>
+                              <img src="img/cv.svg" alt="" style="" class="img-fluid d-none d-sm-block">
+                            </div>
+                        </figure>
+
+                        <hr class="mt-5">
+                    </div>
+                </div>
+              </div>
+
+              <div class="bg-secondary carousel-item">
+                <div class="d-sm-flex carousel-caption text-sm-start mb-5">
+                    <div class="row showcase">
+                        <div class="col-md-8 col-sm-12 showcase-text">
+                            <h1>Welcome <span class="text-warning">Animated text</span></h1>
+                            <p class="my-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio vitae necessitatibus voluptates dolore expedita?
+                            </p>
+                            <button class="btn btn-lg btn-secondary fw-bold border-white bg-white" data-bs-toggle="modal" data-bs-target="#enrolModal">
+                                Start enrollment
+                            </button>
+                        </div>
+                        
+                        <figure class="col-md-4 showcase-img">
+                            <div>
+                              <img src="img/cv.svg" alt="" style="" class="img-fluid d-none d-sm-block">
+                            </div>
+                        </figure>
+
+                        <hr class="mt-5">
+                    </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+    </section>
+
+    <!-- Secondary -->
+    <section class="px-5 pt-4" id="msce">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md py-0">
+                    <h1 class="mb-3 text-center"> <abbr class="text-danger" title="Malawi School of Certificate Education">MSCE</abbr> Modules 
+                        <br> <span class="head-span">Learn secondary school lessons</span></h1>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est unde labore omnis 
+                        doloribus facere.
+                    </p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iure dolor! 
+                        Quibusdam illo nemo culpa deserunt, adipisci cupiditate ut expedita!
+                    </p>
+                </div>
+                <div class="col-md">
+                    <figure>
+                        <div>
+                          <img src="img/website.svg" alt="" style="" class="img-fluid d-none d-sm-block">
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MSCE Modules -->
+    <section class="px-5 py-4">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-md">
+                    <div class="card card-cover text-dark" style="background: url('img/maths.png');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Computer</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+                            
+                            <a href="computer.html" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="comp-quiz.html" class="btn btn-sm btn-primary my-2">Quiz</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card card-cover text-light" style="background: url('img/dna.jpeg');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Biology</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+                            
+                            <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card card-cover text-dark" style="background: url('img/technology-in-the-workplace.png');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                            <h3 class="card-title mb-3"><abbr title="Additional Mathematics">A. Maths</abbr></h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+                            
+                            <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card card-cover text-dark" style="background: url('img/social.jpg');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">English</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+                           
+                            <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn btn-light mt-5">
+                    <i class="bi bi-chevron-right">View more</i>
+                </a> -->
+                </div>
+            </div>
+
+
+            <div class="container mt-3">
+                <div class="row text-center g-3">
+                    <div class="col-md">
+                        <div class="card card-cover text-dark" style="background: url('img/maths.png');">
+                            <div class="card-body text-center border-radius-5">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop"></i>
+                                </div>
+                                <h3 class="card-title mb-3"><abbr title="Ordinary Mathematics">O. Maths</abbr></h3>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                                </p>
+                                
+                                <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                                <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card card-cover text-light" style="background-image: url('img/dna.jpeg');">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-tree"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Physics</h3>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                                </p>
+                                
+                                <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                                <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card card-cover text-dark" style="background-image: url('img/technology-in-the-workplace.png');">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-trash"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Chemistry</h3>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                                </p>
+                                
+                                <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                                <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card card-cover text-dark" style="background-image: url('img/social.jpg');">
+                            <div class="card-body text-center">
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Agriculture</h3>
+                                <p class="card-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                                </p>
+                               
+                                <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                                <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tertiary -->
+    <section class="px-5 tertiary-section" id="tertiary">
+        <div class="container text-center">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-4 mt-4">
+                    <figure>
+                        <div>
+                          <img src="img/strategy-coach-svgrepo-com.svg" alt="" style="height: 255px;" class="img-fluid rounded-circle">
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="text-center mb-3"><span class="text-danger">Tertiary</span>  Modules 
+                        <br> <span class="head-span">Learn college/university entrance lessons</span></h1>
+                    <p class="text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est unde labore omnis 
+                        doloribus facere.
+                    </p>
+                    <p class="text-start">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iure dolor! 
+                        Quibusdam illo nemo culpa deserunt, adipisci cupiditate ut expedita!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tertiary Modules -->
+    <section class="px-5 pt-4 pb-5">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-md">
+                    <div class="card card-cover text-dark" style="background-image: url('img/maths.png');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Numerical Skills</h4>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus. 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+
+                            <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card card-cover text-light" style="background-image: url('img/dna.jpeg');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Logical Skills</h4>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus. 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+                            
+                            <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card card-cover text-dark" style="background-image: url('img/social.jpg');">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Communication Skills</h4>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus. 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, minus.
+                            </p>
+                            
+                            <a href="#" class="btn btn-sm btn-primary my-2">Lessons</a>
+                            <a href="#" class="btn btn-sm btn-primary my-2">Quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Send us a message -->
+    <section class="bg-danger text-light py-4 px-5" id="contact-us">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">
+                    Send us a message
+                </h3>
+                <div class="input-group link-us">
+                    <input 
+                     type="text" 
+                     class="form-control" 
+                     placeholder="Anything you want to tell us"
+                    >
+                    <button 
+                     class="btn btn-primary" 
+                     type="button"
+                    >
+                     Send
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section class="bg-dark text-light pt-5 px-5 pb-0" id="research">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-8">
+                    
+                        <h1 class="mt-0 my-3 me-2">
+                            <span class="text-danger">Research</span> Projects
+                            <img src="img/research.svg" alt="" style="height: 40px; width: 40px;" class="img-fluid rounded-circle">
+                        </h1>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est unde labore omnis 
+                        doloribus facere.
+                    </p>
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iure dolor! 
+                        Quibusdam illo nemo culpa deserunt, adipisci cupiditate ut expedita!
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <figure>
+                        <div>
+                          <img src="img/research.svg" alt="" style="height: 300px;" class="img-fluid">
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-3 pb-0 px-5">
+    <!-- Research areas -->
+    <div class="container text-center px-4">
+        <h2 class="py-2 border-bottom fw-bold text-start">Research <span class="text-warning">Areas</span></h2>
+       
+        <!-- Agriculture research data-->
+        <div class="row border research">
+            <div class="col-md-4 mt-4">
+                <figure>
+                    <div>
+                      <img src="img/agriculture-cultivate-garden-svgrepo-com.svg" alt="" style="height: 260px;" class="img-fluid rounded-circle border border-success">
+                    </div>
+                </figure> 
+            </div>
+            <div class="col-md-8 mt-4">
+                <h3 class="mb-4">
+                    <i class="bi bi-1-circle text-success big"></i> 
+                    Let's share what we got in 
+                    <span class="text-success">Agriculture</span>
+                </h3>
+                <p class="text-start">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam ea cum dignissimos adipisci facilis!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, eos!
+                </p>
+                <p class="text-start">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, error pariatur. Dolorem, aspernatur quam nemo ratione mollitia fugit praesentium voluptate?
+                </p>
+
+                <!-- Agri ribbons -->
+                <div class="d-grid gap-2 d-md-block mb-4 g-5">
+                    <button class="btn btn-success" type="button">Current research</button>
+                    <button class="btn btn-dark" type="button">Specific research</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education research data-->
+        <div class="row border mt-3 research">
+            <div class="col-md-4 mt-4">
+                <figure>
+                    <div>
+                      <img src="img/education-svgrepo-com.svg" alt="" style="height: 260px;" class="img-fluid">
+                    </div>
+                </figure> 
+            </div>
+            <div class="col-md-8 mt-4">
+                <h3 class="mb-4">
+                    <i class="bi bi-2-circle text-danger big"></i> 
+                    Let's share what we got in 
+                    <span class="text-danger">Education</span>
+                </h3>
+                <p class="text-start">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ullam ea cum dignissimos adipisci facilis!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, eos!
+                </p>
+                <p class="text-start">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, error pariatur. Dolorem, aspernatur quam nemo ratione mollitia fugit praesentium voluptate?
+                </p>
+                
+                <!-- Edu ribbons -->
+                <div class="d-grid gap-2 d-md-block mb-3 g-5">
+                    <button class="btn btn-danger" type="button">Current research</button>
+                    <button class="btn btn-dark" type="button">Specific research</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Instructors -->
+    <section class="p-5 mt-4 bg-dark" id="instructors" style="background-image: url('img/wave.svg'); background-repeat: no-repeat;">
+        <div class="container-fluid">
+            <h3 class="pb-2 border-bottom text-light fw-bold">Meet our instructors</h3>
+            <div class="row g-4 mt-2">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-start">
+                                <img class="rounded-circle shadow-1-strong me-3"
+                                src="img/dp.svg" alt="avatar" width="60" height="60" />
+
+                                <div mx-0>
+                                    <h6 class="fw-bold text-primary mb-1">Yamikani Khalani</h6>
+                                    <p class="text-muted small mb-0">
+                                      Updated publicly - Oct 2022
+                                    </p>
+
+                                    <p class="mt-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="social-icons text-center my-2">
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-start">
+                                <img class="rounded-circle shadow-1-strong me-3"
+                                src="img/dp.svg" alt="avatar" width="60" height="60" />
+
+                                <div>
+                                    <h6 class="fw-bold text-primary mb-1">Mr. Danquah</h6>
+                                    <p class="text-muted small mb-0">
+                                      Updated publicly - Oct 2022
+                                    </p>
+
+                                    <p class="mt-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="social-icons text-center my-2">
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-start">
+                                <img class="rounded-circle shadow-1-strong me-3"
+                                src="img/dp.svg" alt="avatar" width="60" height="60" />
+
+                                <div>
+                                    <h6 class="fw-bold text-primary mb-1">Samuel Loga</h6>
+                                    <p class="text-muted small mb-0">
+                                        Updated publicly - Oct 2022
+                                    </p>
+
+                                    <p class="mt-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="social-icons text-center my-2">
+                                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    <footer class="p-5 bg-dark text-light text-center">
+
+        <p class="lead">
+            copyright &copy; 2022
+        </p>
+
+        <button type="button" id="up-scroll" name="button">Scroll up</button>
+
+    </footer>
+
+
+    <!-- Enrol / Register Modal -->
+    <div class="modal p-1" id="enrolModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content align-items-center justify-content-between text-center border-success" style="background: rgb(233, 231, 231);">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome, let's get you registered.</h5>
+                    <button type="button" class="btn-close ms-4" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body my-sm-2">
+                    <!-- MSCE / Tertiary Tabs -->
+                    <div class="tab">
+                        <button class="tablinks btn-sec" onclick="openRegTab(event, 'msceTab')" id="defaultOpen">
+                            <span class="alot">MSCE</span>
+                        </button>
+                        <button class="tablinks btn-tertiary" onclick="openRegTab(event, 'tertiaryTab')">
+                            <span class="alot">Tertiary</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Tab content -->
+                    <div id="msceTab" class="tabcontent">
+                        <form action="" method="post" class="">
+                            <div class="">
+                                <input class="mb-3 regTabInput" name="fname" id="fname" placeholder="First name">
+                                <input class="mb-3 regTabInput" name="lname" id="lname" placeholder="Last name">
+                            </div>
+                            <div class="d-flex">
+                                <select name="sec_xul" id="sec_xul" class="mb-3 regTabInput regTabSelect me-1 text-muted">
+                                    <option value="">Choose school</option>
+                                    <option value="NHSS">NHSS</option>
+                                    <option value="HHI">HHI</option>
+                                </select>
+                                <select name="class" id="class" class="mb-3 regTabInput regTabSelect text-muted">
+                                    <option value="">Class</option>
+                                    <option value="3">Form 3</option>
+                                    <option value="4">Form 4</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <input class="mb-3 regTabInput" name="username" id="username" placeholder="Provide your username">
+                                <input class="mb-3 regTabInput" type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div id="tertiaryTab" class="tabcontent">
+                        <form action="" method="get" class="">
+                            <div class="">
+                                <input class="mb-3 regTabInput" name="fname" id="fname" placeholder="First name">
+                                <input class="mb-3 regTabInput" name="lname" id="lname" placeholder="Last name">
+                            </div>
+                            <div class="d-flex">
+                                <select name="school" id="school" class="mb-3 regTabInput regTabSelect me-1 text-muted">
+                                    <option value="">Choose college</option>
+                                    <option value="MUST">MUST</option>
+                                </select>
+                                <select name="program" id="program" class="mb-3 regTabInput regTabSelect text-muted">
+                                    <option value="">Program (Year 1s)</option>
+                                    <option value="MUST">CIS</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <input class="mb-3 regTabInput" name="username" id="username" placeholder="Provide your username">
+                                <input class="mb-3 regTabInput" type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <a type="submit" class="btn btn-primary btn-block" onclick="alert('Registered successfully')">Click to register</a>
+                <!-- <button type="button" class="btn btn-secondary me-3" data-bs-dismiss="modal">Cancel</button> -->
+
+                <div class="text-muted small mt-3">
+                    <p>By clicking register, you agree to the <a href="#terms">terms of use</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Online -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Offline -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/up.js" charset="utf-8"></script>
+
+</body>
+</html>
